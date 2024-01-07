@@ -1,11 +1,9 @@
-
 public class Calendar0 {	
 	public static void main(String args[]) {
 		int year = Integer.parseInt(args[0]);
 		isLeapYearTest(year);
 		nDaysInMonthTest(year);
-	}
-		 
+	}	 
 	private static void isLeapYearTest(int year) {
 		String commonOrLeap = "common";
 		if (isLeapYear(year)) {
@@ -13,13 +11,11 @@ public class Calendar0 {
 		}
 		System.out.println(year + " is a " + commonOrLeap + " year");  
 	}
-
 	private static void nDaysInMonthTest(int year) {
 		for(int month = 1; month <= 12; month++){
 			int daysInMonth = nDaysInMonth(month, year);
 			System.out.println("Number of days in month " + month + " of year " + year + ": " + daysInMonth);
 		}
-
 	}
 	public static boolean isLeapYear(int year) {
 		if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
@@ -44,5 +40,6 @@ public class Calendar0 {
 		else{
 			return 31;
 		}
+		
 	}
 }
