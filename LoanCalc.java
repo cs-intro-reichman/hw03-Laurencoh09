@@ -10,13 +10,12 @@ public class LoanCalc {
         
         System.out.println(" Loan sum = " + loan + ", interest rate = " + rate + "%, periods = " + n);
 
-    
         System.out.print("Periodical payment, using brute force: ");
         System.out.printf("%.2f", bruteForceSolver(loan, rate, n, epsilon));
         System.out.println();
         System.out.println("number of iterations: " + iterationCounter);
 
-      
+      int iterationCounter = 0;
         System.out.print("Periodical payment, using bi-section search: ");
         System.out.printf("%.2f", bisectionSolver(loan, rate, n, epsilon));
         System.out.println();
