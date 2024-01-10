@@ -4,7 +4,7 @@
     "name": "LowerCase test 1",
     "setup": "javac LowerCase.java",
     "run": "java LowerCase B2C",
-    "input": "",
+    "input": "", 
     "output": "b2c",
     "comparison": "exact",
     "timeout": 10,
