@@ -1,11 +1,15 @@
- public class LowerCase {
-    public static void main(String[]args) {
-
-String str = args [0];
-System.out.println(lowerCase(str));
+public class LowerCase {
+    public static void main(String[] args) {  
+        String str = args[0];
+        System.out.println(lowerCase(str));
     }
 
- public static String lowerCase(String s) {
+   /**
+    * Returns a string which is identical to the original string, 
+    * except that all the upper-case letters are converted to lower-case letters.
+    * Non-letter characters are left as is.
+    */
+    public static String lowerCase(String s) {
         String lowerCase1 = "";
         for(int i = 0; i < s.length(); i++){
             char currentChar = s.charAt(i);
@@ -18,5 +22,6 @@ System.out.println(lowerCase(str));
         }
 
         return lowerCase1;
+     
     }
 }
