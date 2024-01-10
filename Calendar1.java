@@ -1,5 +1,5 @@
 public class Calendar1 {	
-		
+	
 		static int dayOfMonth = 1;   
 		static int month = 1;
 		static int year = 1900;
@@ -48,6 +48,7 @@ public class Calendar1 {
 
 month++;
 					dayOfMonth = 1;
+					
 				}
 			}
 			else{
@@ -61,6 +62,7 @@ month++;
 			isLeap = isLeap || (((year % 4) == 0) && ((year % 100) != 0));
 			return isLeap;
 		}
+		 
 		private static int nDaysInMonth(int month, int year) {
 			if(month == 4 || month == 6 || month == 9 || month ==11) return 30;
 			if(month == 1 || month == 3 || month == 4 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) return 31;
@@ -69,6 +71,5 @@ month++;
 				else return 28;
 			}
 			else return 0;
-			
 		}
 	}
