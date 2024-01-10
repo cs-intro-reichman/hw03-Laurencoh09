@@ -4,6 +4,7 @@
 String str = args [0];
 System.out.println(lowerCase(str));
     }
+
  public static String lowerCase(String s) {
         String lowerCase1 = "";
         for(int i = 0; i < s.length(); i++){
@@ -15,6 +16,7 @@ System.out.println(lowerCase(str));
                 lowerCase1 = lowerCase1 + currentChar;
             }
         }
+
         return lowerCase1;
     }
 }
