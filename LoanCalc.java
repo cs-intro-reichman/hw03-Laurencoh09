@@ -3,7 +3,7 @@ public class LoanCalc {
     static double epsilon = 0.001;  
     static int iterationCounter;    
     public static void main(String[] args) {
-        // Gets the loan data
+
         double loan = Double.parseDouble(args[0]);
         double rate = Double.parseDouble(args[1]);
         int n = Integer.parseInt(args[2]);
@@ -22,7 +22,7 @@ public class LoanCalc {
     }
 
     public static double bruteForceSolver (double loan, double rate, int n, double epsilon) {
-        double guess = loan / n; // Initial guess
+        double guess = loan / n;
 
         while (endBalance(loan, rate, n, guess) > 0) {
             guess += epsilon;
@@ -33,7 +33,7 @@ public class LoanCalc {
     }
 
     public static double bisectionSolver (double loan, double rate, int n, double epsilon) {
- iterationCounter = 0;
+        iterationCounter = 0;
         double lo = 0;
         double hi = loan / n * n; 
         double guess = (lo + hi) / 2;
