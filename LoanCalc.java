@@ -4,9 +4,10 @@ public class LoanCalc {
     static int iterationCounter;    
     public static void main(String[] args) {
         // Gets the loan data
-        double loan = 100000;
-        double rate = 5;
-        int n = 10;
+        double loan = Double.parseDouble(args[0]);
+        double rate = Double.parseDouble(args[1]);
+        int n = Integer.parseInt(args[2]);
+        
         System.out.println(" Loan sum = " + loan + ", interest rate = " + rate + "%, periods = " + n);
 
     
