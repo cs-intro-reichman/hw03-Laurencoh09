@@ -1,5 +1,5 @@
 public class Calendar1 {	
-		// Starting the calendar on 1/1/1900
+		
 		static int dayOfMonth = 1;   
 		static int month = 1;
 		static int year = 1900;
